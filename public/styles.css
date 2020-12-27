@@ -1,0 +1,21 @@
+* {
+}
+
+body {
+    /* max-width: 800px; */
+    margin: auto;
+    background-color: #c2332b;
+    text-align: center  ;
+    font-family: Arial;
+    color: white;
+}
+
+#timer {
+    font-weight: bold;
+    font-size: 500%;
+}   
+
+#menu-table {
+    width: 30%;
+    margin: auto;
+}
