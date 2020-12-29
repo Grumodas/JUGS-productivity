@@ -1,17 +1,10 @@
 import { useEffect, useState } from 'react';
-// import './App.css';
 import Tabs from "./components/Tabs";
 import PropTypes from 'prop-types';
-// use context?
-// https://stackoverflow.com/questions/34351804/how-to-declare-a-global-variable-in-react
+
 let currentTime = new Date();
-let timerDuration = 25;
-// global variables? bruh
-// need to find a way to pass current time and how long the study session will be
-
-
 function App(props) {
-    timerDuration = props.time;
+    let timerDuration = props.time;
 
     const calculateTimeLeft = (timerDuration) => {
         let difference = +new Date(currentTime.getTime() + timerDuration * 60000) - +new Date();
@@ -31,7 +24,6 @@ function App(props) {
     }
 
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(timerDuration));
-    // const [year] = useState(new Date().getFullYear());
 
     useEffect( () => {
     const timer = setTimeout(() => {
@@ -63,7 +55,7 @@ function App(props) {
                     <span>
                         <br></br>
                         <button class="button button1">Pause</button>
-                        <button class="button button1">Stop</button>    
+                        <button class="button button1">Stop</button>                          
                     </span>
                 </div>
                 <div label="Stats"> 
@@ -78,7 +70,7 @@ function App(props) {
                     <iframe width="675" height="380" src="https://www.youtube.com/embed/5qap5aO4i9A" 
                         frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; 
                         gyroscope; picture-in-picture" allowfullscreen/>
-                    </div>
+                </div>
                 <div label="Settings"> 
                     Change your settings here!
                 </div> 
@@ -86,6 +78,5 @@ function App(props) {
       </div>
     );
 }
-
 
 export default App;
