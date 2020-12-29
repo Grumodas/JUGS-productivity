@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './App.css';
+// import './App.css';
 import Tabs from "./components/Tabs";
 import PropTypes from 'prop-types';
 // use context?
@@ -8,7 +8,11 @@ let currentTime = new Date();
 let timerDuration = 25;
 // global variables? bruh
 // need to find a way to pass current time and how long the study session will be
-function App() {
+
+
+function App(props) {
+    timerDuration = props.time;
+
     const calculateTimeLeft = (timerDuration) => {
         let difference = +new Date(currentTime.getTime() + timerDuration * 60000) - +new Date();
         // let difference = +new Date("12/27/2020, 22:45:00") - +new Date();
