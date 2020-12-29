@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Tabs from "./components/Tabs";
-
+import PropTypes from 'prop-types';
 // use context?
 // https://stackoverflow.com/questions/34351804/how-to-declare-a-global-variable-in-react
 let currentTime = new Date();
-let timerDuration = 5;
+let timerDuration = 25;
 // global variables? bruh
 // need to find a way to pass current time and how long the study session will be
 function App() {
@@ -55,7 +55,12 @@ function App() {
         <div>
             <Tabs> 
                 <div label="Home" id="timer">
-                    {timerComponents.length ? timerComponents : <span>Study session is done! Get some rest :)</span>}
+                    {timerComponents.length ? <h1>{timerComponents}</h1> : <span>Study session is done! Get some rest :)</span>}
+                    <span>
+                        <br></br>
+                        <button class="button button1">Pause</button>
+                        <button class="button button1">Stop</button>    
+                    </span>
                 </div>
                 <div label="Stats"> 
                     Statistics about your productics
@@ -65,6 +70,11 @@ function App() {
                     <p>G[et]</p> 
                     <p>S[tarted]</p>
                 </div> 
+                <div label="Music"> 
+                    <iframe width="675" height="380" src="https://www.youtube.com/embed/5qap5aO4i9A" 
+                        frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen/>
+                    </div>
                 <div label="Settings"> 
                     Change your settings here!
                 </div> 

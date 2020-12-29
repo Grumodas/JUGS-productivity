@@ -54,12 +54,14 @@ body {
     /* list-style: none; */
     padding: 5px 32px;
     margin: 30px 1px;
-    border: 2px solid white;
+    border-radius: 5px;
+    /* border: 2px solid white; */
   }
 
   .tab-list-item:hover {
     background-color: white;
     color: #c2332b;
+    transition-duration: 0.4s;
   }
   
   .tab-list-active {
