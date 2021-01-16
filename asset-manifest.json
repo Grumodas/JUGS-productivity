@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Grumodas/JUGS-productivity/static/js/main.1db53cba.chunk.js",
+    "main.js.map": "/Grumodas/JUGS-productivity/static/js/main.1db53cba.chunk.js.map",
+    "runtime-main.js": "/Grumodas/JUGS-productivity/static/js/runtime-main.16fad2db.js",
+    "runtime-main.js.map": "/Grumodas/JUGS-productivity/static/js/runtime-main.16fad2db.js.map",
+    "static/js/2.0077c174.chunk.js": "/Grumodas/JUGS-productivity/static/js/2.0077c174.chunk.js",
+    "static/js/2.0077c174.chunk.js.map": "/Grumodas/JUGS-productivity/static/js/2.0077c174.chunk.js.map",
+    "static/js/3.3225a59b.chunk.js": "/Grumodas/JUGS-productivity/static/js/3.3225a59b.chunk.js",
+    "static/js/3.3225a59b.chunk.js.map": "/Grumodas/JUGS-productivity/static/js/3.3225a59b.chunk.js.map",
+    "index.html": "/Grumodas/JUGS-productivity/index.html",
+    "static/js/2.0077c174.chunk.js.LICENSE.txt": "/Grumodas/JUGS-productivity/static/js/2.0077c174.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16fad2db.js",
+    "static/js/2.0077c174.chunk.js",
+    "static/js/main.1db53cba.chunk.js"
+  ]
+}
